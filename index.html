@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="X-VA-compatible" content="IE=Rdge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>text</title>
+<!-- <link rel="stylesheet" href="upcons.css"> -->
+</head>
+<style>
+   .form{
+      border:1px solid black;
+	  width:25rem;
+	  height:15rem;
+	  margin-left:30rem;
+	  margin-top:10rem;
+	  background-color:	 #ffdd99;
+   }
+   .name{
+      text-align:center;
+	  margin-top:5rem;
+   }
+   .input{
+      padding:1rem;
+	  
+   }
+
+
+</style>
+<body>
+</title>
+<form action="oct4formmain.html" onsubmit='return(validation())'>
+<div class='form'>
+   <div class='name'>
+<label for="hii">username</label>
+<input id="name"type=/><br><br>
+<label for="jj">password</label>
+<input id="pass" type="password"/><br><br>
+<div class='input'>
+<button>Submit</button>
+</div>
+   </div>
+</div>
+</form>
+<script>
+  function validation(){
+  var username=document.getElementById('name').value;
+  var password=document.getElementById('pass').value;
+  
+  if(username==''){
+     alert('enter username')
+	 return false
+  }
+  else if(password==''){
+     alert('enter password')
+	 return false
+  } 
+return true  
+     
+  }
+  
+  
+  
+
+</script>
+</body>
+</html>
